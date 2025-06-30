@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.banner img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8b400;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.pintxos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);;
+    gap: 60px 30px;
+    padding: 20px;
+}
+
+.pintxo-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    height: 100%;
+}
+
+.pintxo-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+.pintxo-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.pintxo-card:hover img {
+    transform: scale(1.05); 
+}
+
+.pintxo-card h3 {
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+.pintxo-card p {
+    padding: 0 10px 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+button:hover {
+    background-color: #f1a800;
+}
+
+.receta {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: none;
+    flex-grow: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
