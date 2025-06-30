@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>El Rincón de las Tapas - Alcalá de Guadaíra</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="banner">
+                <img src="img/banner1.webp" alt="Banner del Bar de Tapas" loading="lazy">
+            </div>
+            <h1>El Rincón de las Tapas en Alcalá</h1>
+            <p><b>Ven, prueba y disfruta de nuestras irresistibles y deliciosas tapas y pintxos</b></p>
+        </header>
+        
+        <section class="pintxos-grid">
+            <div class="pintxo-card">
+                <img src="img/pintxo1.webp" alt="Pintxo de Jamón con Queso e Higos" loading="lazy">
+                <h3>Tapa de Jamón y Queso</h3>
+                <div class="contenido">
+                    <p><strong>Ingredientes:</strong> Jamón serrano, queso e higos frescos</p>
+                    <button class="ver-receta" onclick="toggleReceta(1)">Ver receta</button>
+                    <div class="receta" id="receta1">
+                        <h4>Pasos para prepararlo:</h4>
+                        <ul>
+                            <li>Coloca el jamón serrano sobre las rebanadas del pan.</li>
+                            <li>Agrega las lonchas de queso.</li>
+                            <li>Pon los higos frescos cortados encima.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pintxo-card">
+                <img src="img/pintxo2.webp" alt="Pintxo de Pan con Orejones" loading="lazy">
+                <h3>Tapa de Parma Ham y Mozzarella</h3>
+                <div class="contenido">
+                    <p><strong>Ingredientes:</strong> Pan de orejones, Parma ham, higos frescos y mozzarella</p>
+                    <button class="ver-receta" onclick="toggleReceta(2)">Ver receta</button>
+                    <div class="receta" id="receta2">
+                        <h4>Pasos para prepararlo:</h4>
+                        <ul>
+                            <li>Coloca las rebanadas de pan de orejones en la base.</li>
+                            <li>Agrega las lonchas de jamón de parma e higos frescos.</li>
+                            <li>Coloca una bola pequeña de mozzarella encima.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pintxo-card">
+                <img src="img/pintxo4.webp" alt="Pintxo de Tortilla de Patatas y Pimientos de Piquillo"  loading="lazy">
+                <h3>Tapa de Tortilla de Patatas</h3>
+                <div class="contenido">
+                    <p><strong>Ingredientes:</strong> Tortilla de patatas, pimientos de piquillo, pan, aceite de oliva virgen extra, sal y pimienta</p>
+                    <button class="ver-receta" onclick="toggleReceta(4)">Ver receta</button>
+                    <div class="receta" id="receta4">
+                        <h4>Pasos para prepararlo:</h4>
+                        <ul>
+                            <li>Preparar la tortilla de patatas.</li>
+                            <li>Cortar la tortilla en trozos y colocar sobre el pan tostado.</li>
+                            <li>Colocar un pimiento de piquillo encima y salpicar con sal y pimienta.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pintxo-card">
+                <img src="img/pintxo5.webp" alt="Pintxo de Anchoas, Aceitunas y Mermelada de Pimientos Rojos"  loading="lazy">
+                <h3>Tapa de Anchoas y Mermelada de Pimientos Rojos</h3>
+                <div class="contenido">
+                    <p><strong>Ingredientes:</strong> Anchoas, aceitunas, mermelada de pimientos rojos, pan, aceite de oliva virgen extra</p>
+                    <button class="ver-receta" onclick="toggleReceta(5)">Ver receta</button>
+                    <div class="receta" id="receta5">
+                        <h4>Pasos para prepararlo:</h4>
+                        <ul>
+                            <li>Tostar el pan y untar con mermelada de pimientos rojos.</li>
+                            <li>Añadir una o dos anchoas sobre el pan.</li>
+                            <li>Colocar unas aceitunas y rociar con aceite de oliva virgen extra.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pintxo-card">
+                <img src="img/pintxo6.webp" alt="Pintxo de Jamón y Queso Fundido, Pimiento Verde, Anchoas y Aceitunas" loading="lazy">
+                <h3>Tapa de Jamón y Queso Fundido</h3>
+                <div class="contenido">
+                    <p><strong>Ingredientes:</strong> Jamón serrano, queso, pimiento verde, anchoas, aceitunas, pan, aceite de oliva virgen extra</p>
+                    <button class="ver-receta" onclick="toggleReceta(6)">Ver receta</button>
+                    <div class="receta" id="receta6">
+                        <h4>Pasos para prepararlo:</h4>
+                        <ul>
+                            <li>Tostar el pan y colocar el queso encima para fundirlo.</li>
+                            <li>Agregar una loncha de jamón y pimiento verde cortado.</li>
+                            <li>Colocar una anchoa y una aceituna encima.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pintxo-card">
+                <img src="img/pintxo7.webp" alt="Pintxo de Txangurro" loading="lazy">
+                <h3>Tapa de Txangurro</h3>
+                <div class="contenido">
+                    <p><strong>Ingredientes:</strong> Txangurro, pan, mayonesa, limón, perejil fresco, aceite de oliva virgen extra</p>
+                    <button class="ver-receta" onclick="toggleReceta(7)">Ver receta</button>
+                    <div class="receta" id="receta7">
+                        <h4>Pasos para prepararlo:</h4>
+                        <ul>
+                            <li>Preparar el txangurro y mezclar con mayonesa y limón.</li>
+                            <li>Colocar la mezcla sobre el pan tostado.</li>
+                            <li>Decorar con perejil fresco y rociar con aceite de oliva virgen extra.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2025 BGD Bar de Tapas en Alcalá de Guadaíra. Todos los derechos reservados.</p>
+        </footer>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>
